@@ -1,0 +1,56 @@
+<!--
+   A very simple input form View template:
+   note that the form method is POST, and the action
+   is the URL for the route that handles form input.
+    -->
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>{{ @html_title }}</title>
+     <meta name="description" content="travel with I fly Friday to your destination">
+     <link rel="stylesheet" href="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/css/main5.css">
+     <style>
+       body {
+         background-image: url("https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Map_duo.jpg");  }
+     </style>
+   </head>
+   <body>
+   
+   <div id="navmenu">
+     <ul>
+       {* <li><a href="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff">pdf</a></li> *}
+       <li><a href="/cities">pdf</a></li>
+       <li><a href="/about">about</a></li>
+       <li><a href="/">cities</a></li>
+     </ul>
+   </div>
+   
+   <div id="myMenu">
+     <div class="myWrapper">
+       <nav>
+         <div class="logo"></div>
+       </nav>
+     </div>
+   </div>
+   
+   <div id="container">
+      
+
+      <div id="main" style="
+                           min-height: 200px;
+                           text-align: center;
+      ">
+         <include href="{{ @content }}" />
+      </div>
+   
+     <div id="footer">
+       <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Instagram_icon" alt="Madrid" style="width:32px;height:32px;">
+       <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Facebook_icon" alt="Madrid" style="width:32px;height:32px;">
+     </div>
+   
+
+   </body>
+   </html>

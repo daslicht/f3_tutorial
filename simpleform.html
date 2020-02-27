@@ -1,0 +1,133 @@
+
+
+<!--
+A very simple input form View template:
+note that the form method is POST, and the action
+is the URL for the route that handles form input.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>I fly Friday</title>
+  <meta name="description" content="travel with I fly Friday to your destination">
+  <link rel="stylesheet" href="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/css/main5.css">
+  <style>
+    body {
+      background-image: url("https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Map_duo.jpg");  }
+  </style>
+</head>
+<body>
+
+
+
+<div id="navmenu">
+  <ul>
+    <li><a href="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff">Home</a></li>
+    <li><a href="{{ @BASE }}/simpleform">London</a></li>
+    <li><a href="#contact">Who are we</a></li>
+    <li><a href="#about">Assignment</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+<div id="myMenu">
+  <div class="myWrapper">
+    <nav>
+      <div class="logo"></div>
+    </nav>
+  </div>
+</div>
+
+<div id="container">
+
+
+  <h1>Hey, let's make a plan</h1>
+
+  <div>
+    <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Plane_London-animation.gif" alt="londonanimation" style="width:900px;height:120px;">
+  </div>
+
+
+  <div id="main">
+
+    <form>
+      <p>Select your choice</p>
+      <select name="theme" id="theme">
+        <option value="shopping">Iconic Shopping</option>
+        <option value="tech">Tech</option>
+        <option value="Royal">Royal London</option>
+        <option value="peach">Peace and quite</option>
+        <option value="markets">Markets</option>
+        <option value="foodie">Foodie</option>
+        <option value="literary" selected="selected">Literary</option>
+        <option value="sporty">Sporty</option>
+        <option value="ghosts">Ghosts</option>
+        <option value="secret">Secret London</option>s
+        <option value="arty">Arty</option>
+        <option value="flora">Flora and Fauna</option>
+      </select>
+
+
+    </form>
+
+    <div id="form">
+
+      <p>This is a simple form</p>
+      <form id="form1" name="form1" method="post" action="{{ @BASE }}/simpleform">
+        Please enter your name:
+        <input name="name" type="text" placeholder="Enter name" id="name" size="50" />
+        <input name="address" type="text" placeholder="Enter address" id="address" size="50" />
+        <input name="dob" type="text" placeholder="Enter data birth" id="dob" size="16" />
+        <input name="hobby" type="text" placeholder="Enter data birth" id="hobby" size="16" />
+        <input name="city" type="text" placeholder="Enter data birth" id="city" size="16" />
+
+        <p>Choose a color/theme:
+          <select name="colour" id="colour">
+            <option value="blue">Blue</option>
+            <option value="red" selected="selected">Red</option>
+            <option value="green">Green</option>
+          </select>
+        </p>
+        <p>
+          <input type="submit" name="Submit" value="Submit" />
+        </p>
+      </form>
+
+    </div>
+
+
+
+  <div id="country">
+    <div class="someimages">
+      <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Rome_icon-colour.png" alt="Rome" style="width:128px;height:128px;">
+      <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Madrid_icon-colour.png" alt="Madrid" style="width:128px;height:128px;">
+      <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Berlin_icon-colour.png" alt="Berlin" style="width:128px;height:128px;">
+      <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Paris_icon-colour.png" alt="Paris" style="width:128px;height:128px;">
+      <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Rome_icon-colour.png" alt="Rome" style="width:128px;height:128px;">
+    </div>
+  </div>
+
+
+  <div id="footer">
+    <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Instagram_icon" alt="Madrid" style="width:32px;height:32px;">
+    <img src="https://playground.eca.ed.ac.uk/~s1788766/fatfree/websitepart2phpfff/ui/images/Facebook_icon" alt="Madrid" style="width:32px;height:32px;">
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
